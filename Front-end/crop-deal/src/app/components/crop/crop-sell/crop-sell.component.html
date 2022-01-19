@@ -1,0 +1,41 @@
+<app-header></app-header>
+<h2>Buy-Crops</h2>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<div class="demo-button-container">
+    <div class="bootstrap-wrapper">
+        <div class="conctainer text-center mt">
+    
+            
+        </div>
+    </div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>   </th>
+            <th>   </th>
+            <th> Crop Name</th>
+            <th> Crop Type </th>
+            <th> Crop Quantity</th>
+            <th>Price/Kg</th>
+            <th> Actions </th>
+        </tr>
+    </thead>
+    <tbody>
+        <td></td>
+        
+        <tr *ngFor = "let crop of crops" class="customBorder">
+            <img mat-card-sm-image src="../../../assets/item2.jpg" >
+            <td>  </td>
+            <td> {{ crop.crop_name }} </td>
+            <td> {{ crop.crop_type}} </td>
+            <td> {{ crop.crop_quantity}} </td>
+            <td>{{ crop.price}}</td>
+            <td>
+                <a (click)="Buy()" mat-raised-button color="accent">Buy</a>
+            </td>
+        </tr>
+
+</table>
+
+<hr>
+    <small class="footerD">&copy;Nusrat Kembhavi</small>

@@ -1,0 +1,14 @@
+.customAboutUs{
+    margin:5%;
+    height: 50%;
+    padding:5%;
+}
+.one{
+    font-weight: 800;
+    font-size: 40px;
+}
+
+small{
+    margin-left: 45%;
+    color: rgb(255, 0, 34);
+}

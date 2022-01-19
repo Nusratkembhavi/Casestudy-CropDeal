@@ -1,0 +1,115 @@
+<app-header></app-header>
+<div>
+<h2> Crops-List</h2>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<div class="demo-button-container">
+    <div class="bootstrap-wrapper">
+        <div class="conctainer text-center mt">
+            <!-- <a routerLink="/addcrop" mat-raised-button color="accent">Add Crop</a> -->
+    
+            
+        </div>
+    </div>
+<table class="table">
+    <thead>
+        <tr>
+            <th> Crop Name</th>
+            <th> Crop Type </th>
+            <th> Crop Quantity</th>
+            <th> Actions </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let crop of crops" >
+            <td> {{ crop.crop_name }} </td>
+            <td> {{ crop.crop_type}} </td>
+            <td> {{ crop.crop_quantity}} </td>
+            <td>
+                
+                <!-- <button (click) = "updateCrop(crop.id)" class = "btn btn-info"> Update</button> -->
+                <button (click) = "deleteCrop(crop.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button (click) = "cropDetails(crop.id)" class = "btn btn-info" style="margin-left: 10px"> View</button>
+            </td>
+        </tr>
+
+</table>
+</div>
+<!-- payment -->
+<div>
+    <h2> Payments</h2>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <div class="demo-button-container">
+        <div class="bootstrap-wrapper">
+            <div class="conctainer text-center mt">
+                <!-- <a routerLink="/addcrop" mat-raised-button color="accent">Add Crop</a> -->
+        
+                
+            </div>
+        </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th> Name</th>
+                <th> Card Number </th>
+                <th> txnId</th>
+                <th> Amount </th>
+                <th> Status </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let payment of payments" >
+                <td> {{ payment.name }} </td>
+                <td> {{ payment.cardnumber}} </td>
+                <td> {{ payment.txnId}} </td>
+                <td> {{ payment.amount}} </td>
+                <td> {{ payment.status}} </td>
+                <td>
+                    
+                    <!-- <button (click) = "updateCrop(crop.id)" class = "btn btn-info"> Update</button> -->
+                    <button (click) = "deleteCrop(crop.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                    <!-- <button (click) = "cropDetails(crop.id)" class = "btn btn-info" style="margin-left: 10px"> View</button> -->
+                </td>
+            </tr>
+    
+    </table>
+    </div>
+<!-- Dealers list -->
+
+<div>
+    <h2> Dealers-List</h2>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <div class="demo-button-container">
+        <div class="bootstrap-wrapper">
+            <div class="conctainer text-center mt">
+                <!-- <a routerLink="/addcrop" mat-raised-button color="accent">Add Crop</a> -->
+        
+                
+            </div>
+        </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th> Dealer Name</th>
+                <!-- <th> Email </th> -->
+                <!-- <th> ContactNo</th> -->
+                <!-- <th> Actions </th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let dealer of dealers" >
+                <td> {{ dealer.dealer_name }} </td>
+                <!-- <td> {{ dealer.dealer_email}} </td> -->
+                <!-- <td> {{ dealer.dealer_contactNo}} </td> -->
+                <td>
+                    
+                    <!-- <button (click) = "updateCrop(crop.id)" class = "btn btn-info"> Update</button> -->
+                    <button (click) = "deleteDealer(dealer.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                    <!-- <button (click) = "dealerDetails(dealer.id)" class = "btn btn-info" style="margin-left: 10px"> View</button> -->
+                </td>
+            </tr>
+    
+    </table>
+    </div>
+    <hr>
+    <small class="footerD">&copy;Nusrat Kembhavi</small>
+    

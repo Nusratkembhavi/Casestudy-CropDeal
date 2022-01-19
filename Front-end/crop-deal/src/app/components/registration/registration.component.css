@@ -1,0 +1,38 @@
+
+.full-width{
+    width: 100%;
+  /* margin-left: 35%; */
+}
+.mb-0{
+    display:block;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    
+}
+.card-header{
+    background-color: violet;
+}
+.formBody{
+    margin:auto;
+}
+
+.move-to-SignIn{
+    margin-left:65% ;
+    font-size: 16px;
+    border-bottom: rgb(138, 138, 253) solid;
+}
+/* img{
+    
+    height: 150px;
+    width: 250px;
+} */
+h1{
+    font-size: 30px ;
+    font-weight: bolder;
+    
+}
+small{
+    margin-left: 45%;
+    color: rgb(255, 0, 34);
+}

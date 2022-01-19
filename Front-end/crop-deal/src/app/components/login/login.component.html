@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<app-header></app-header>
+
+
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3"><br>
+                <mat-card>
+                <!-- <div class="container text-center">
+                   
+                </div> -->
+                
+                <!-- <img src="../../../assets/login2.png"> -->
+                    <h1 class="text-center">Login In</h1><br>
+<!-- {{userLoginData|json}} -->
+                    <form (ngSubmit)="onSubmit()">
+                                             <!--username field-->
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Username</mat-label>
+                            <input
+                            [(ngModel)]="credentials.username"
+                            name="username"
+                             required matInput placeholder="UserName">
+                        </mat-form-field>
+
+                                             <!--password field-->
+
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Password</mat-label>
+                            <input
+                            [(ngModel)]="credentials.password"
+                            name="password"
+                            type="password"
+                            required matInput placeholder="Password">
+                        </mat-form-field>
+
+
+                        <div class="container text-center">
+                            <button mat-raised-button color="primary" type="submit">
+                                Sign In
+                            </button>
+                        </div>
+                        </form>
+                        <div> <p>Don't have an account? <a href="register">signup</a></p></div>
+                </mat-card>
+                <!-- {{credentials | json}} -->
+            </div>
+            
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<hr>
+    <small class="footerD">&copy;Nusrat Kembhavi</small>

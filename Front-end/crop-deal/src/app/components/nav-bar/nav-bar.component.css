@@ -1,0 +1,87 @@
+/* .example-spacer {
+    flex: 1 1 auto;
+} */
+.form-control{
+    border-radius: 3px;
+    width:300px;
+    margin-left:400px;
+}
+
+.navColor{
+    background-color: greenyellow;
+
+}
+body{ margin:0; font-family:'tahoma'}
+
+nav {
+	margin:0 auto;
+  width:100%;
+  height:auto;
+  display:inline-block;
+  background:rgb(202, 84, 248);
+}
+
+nav ul {
+	margin:0;padding:0;
+  list-style-type:none;
+  display:inline-block;
+}
+
+nav ul li {
+	position:relative;
+	margin:0 20px 0 0;
+  display:inline-block;
+}
+
+li > a:after { content: ' »'; } /* Change this in order to change the Dropdown symbol */
+
+li > a:only-child:after { content: ''; }
+
+nav ul li a {
+	padding:20px;
+  display:inline-block;
+  color:black;
+  font-weight: 500;
+  text-decoration:none;
+}
+
+nav ul li a:hover {
+  opacity:0.5;
+}
+
+nav ul li ul {
+	display:none;
+  position:absolute;
+  left:0;
+  background: rgb(243, 243, 243);
+  float:left;
+}
+
+nav ul li ul li {
+	width:100%;
+  border-bottom:1px solid rgba(255,255,255,.3);
+}
+
+nav ul li:hover ul {
+  display:block;
+}
+.headerCard{
+    background-color: rgb(156, 236, 35);
+    height: 60px;
+    padding-top: 0px;
+    border-bottom: 2px solid gray ;
+    border-left: 2px solid gray ;
+
+}
+  img{
+    height: 65px;
+  }
+/* .dropdownCategory{
+    border: 5px solid violet;
+    border-radius: 10px;
+    border-left: 3px solid rgb(253, 206, 253);
+    border-top: 3px solid rgb(253, 206, 253);
+    position: relative;
+    z-index:10000;
+
+} */

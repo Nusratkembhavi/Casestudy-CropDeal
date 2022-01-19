@@ -1,0 +1,36 @@
+
+/* h1{
+    font-weight: 550;
+} */
+.customBorder img{
+   
+    
+    height: 70px;
+}
+/* .desc{
+    float: left;
+   
+} */
+/* .card-body{
+    max-height: 30%;
+ }
+ .customMat{
+     width: 30%;
+    float: right;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    margin-top: 65px;
+
+ } */
+
+ .customBorder{
+     margin-left: 10%;
+     margin-right: 10%;
+     margin-top: 5%;
+     border-radius: 5px;
+     border:2px solid rgb(236, 236, 236);
+ }
+ small{
+    margin-left: 45%;
+    color: rgb(255, 0, 34);
+}

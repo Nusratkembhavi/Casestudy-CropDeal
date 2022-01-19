@@ -1,0 +1,61 @@
+<app-header></app-header>
+<section class="header">
+    <div class="container">
+  
+        <h1>Confirm Your Payment</h1>
+        <form style="margin-left:30%; font-weight: bold; height: 450px; width: 500px;
+        border-radius: 20px; " [formGroup]="registerForm" >
+          <div class="form-group">
+            <label>Amount:</label>
+            <br>
+            <input type="rId" formControlName="amount" name="amount" id="amount" autocomplete="off" placeholder="Enter Amount" required><br>
+            <span *ngIf="isValid('amount')" class="text-danger">Enter Amount</span>
+        </div>
+          <div class="form-group">
+            <label>Card Holder Name:</label>
+            <br>
+            <input type="name" formControlName="name" name="name" id="name" autocomplete="off" placeholder="Card Holder name" required><br>
+            <span *ngIf="isValid('name')" class="text-danger">Card Holder is required</span>
+        </div>
+        <div class="form-group">
+          <label>Card Number</label>
+          <br>
+          <input type="cardnumber" formControlName="cardnumber" name="cardnumber" id="cardnumber" autocomplete="off" placeholder="card-number" required><br>
+          <span *ngIf="isValid('cardnumber')" class="text-danger">card-number is required</span>
+      </div>
+           <div class="row">
+             <div class="col-lg-4">
+             
+             <div class="form-group" style=" margin-left: 50px; ">
+              <label>Exp Date</label>
+              <br>
+              <input type="date" formControlName="exp" name="Exp" id="Exp" autocomplete="off" placeholder="Exp date" required><br>
+           
+             <span *ngIf="isValid('exp')" class="text-danger">expiration Date is required</span>
+            </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="form-group" style=" margin-left: 70px;">
+                <label>CVV</label>
+                <br>
+                <input type="CVV" formControlName="cVV" name="CVV" id="CVV" autocomplete="off" placeholder="Enter CVV" required><br>
+             
+               <span *ngIf="isValid('cVV')" class="text-danger">CVV is required</span>
+              </div>
+            </div>
+           </div>
+      
+                <div class="cards">
+                    <img src="https://www.pngall.com/wp-content/uploads/2016/07/Mastercard-Download-PNG.png" alt="">
+                    <img src="https://seeklogo.com/images/V/visa-logo-6F4057663D-seeklogo.com.png" alt="">
+                    <img src="https://www.kindpng.com/picc/m/44-440826_chad-hurley-paypal-logo-hd-png-download.png" alt="">
+                </div>
+                <br>
+             <button class="btn btn-primary btn-large"  (click)="saveit()" style="border-radius: 5px;">Pay</button>
+      </form>
+      </div>
+  
+    </section>
+  
+ 
+  <!-- <h1>payment works</h1> -->

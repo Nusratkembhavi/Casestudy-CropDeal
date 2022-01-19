@@ -1,0 +1,19 @@
+.cards img{
+    height: 30px;
+    display: inline-block;
+}
+.header{
+    background-image: url("https://wallpaperaccess.com/full/4597139.jpg");
+    size: cover;
+ text-align: center; 
+ border-color: blanchedalmond;  
+}
+.container{
+    color: whitesmoke;
+    border-radius: 10px;
+    background-color: rgba(0, 0,0, 0.5);
+    size: cover;
+}
+form input{
+    color: black;
+}

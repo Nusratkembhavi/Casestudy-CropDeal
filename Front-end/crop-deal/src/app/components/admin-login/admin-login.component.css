@@ -1,0 +1,18 @@
+.full-width{
+    width: 100%;
+}
+/* img{
+    
+    height: 150px;
+    width: 250px;
+} */
+h1{
+    font-size: 30px ;
+    font-weight: bolder;
+    
+}
+
+small{
+    margin-left: 45%;
+    color: rgb(255, 0, 34);
+}

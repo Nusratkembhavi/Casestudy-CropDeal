@@ -1,0 +1,27 @@
+/* navbar */
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .mat-toolbar.mat-primary{
+      background: cornflowerblue;
+      color: white;
+  }
+  span{
+      font-size: 25px;
+  }
+  p{
+      margin-left: -20px;
+  }
+  .navColor{
+    background-color: rgb(220, 248, 197);
+  }
+  .headerCard{
+    background-color: rgb(156, 236, 35);
+    height: 60px;
+    padding-top: 0px;
+    border-bottom: 2px solid gray ;
+    border-left: 2px solid gray ;
+  }
+  /* img{
+    height: 40px;
+  } */

@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<app-header></app-header>
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3"><br>
+
+                <mat-card>
+                    <div class="container text-center">
+                        <!-- <img src="../../../assets/logo.png" alt=""/> -->
+                    </div>
+                    
+                    <h1 class="text-center">Register</h1><br>
+                    <!-- {{user| json}} -->
+                    <form (ngSubmit)="formSubmit()">
+                                    <!--name field-->
+                            <mat-form-field class="full-width" appearance="outline">
+                                <mat-label>Name</mat-label>
+                                <input 
+                                required
+                                [(ngModel)]="credentials.name"
+                                name="name"
+                                matInput 
+                                placeholder="Enter Name">
+                            </mat-form-field>
+                                
+                                    <!--password field-->
+                            <mat-form-field class="full-width" appearance="outline">
+                                    <mat-label>Password</mat-label>
+                                    <input 
+                                    required
+                                    [(ngModel)]="credentials.password"
+                                name="password"
+                                    type="password" matInput placeholder="Enter Password">
+                            </mat-form-field>
+
+                                <!--city field-->
+                            <mat-form-field class="full-width" appearance="outline">
+                                    <mat-label>City</mat-label>
+                                    <input
+                                    required
+                                    [(ngModel)]="credentials.city"
+                                name="city"
+                                    matInput placeholder="Enter City">
+                            </mat-form-field>
+
+                            <div class="container text-center">
+                                <button type="submit" mat-raised-button color="primary">Register</button>
+
+                            </div>
+
+                                
+                    </form>
+            </mat-card>
+          </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+
+<hr>
+<small class="footerD">&copy;Nusrat Kembhavi</small>

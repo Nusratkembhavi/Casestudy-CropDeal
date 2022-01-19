@@ -1,0 +1,61 @@
+<!--nav bar-->
+
+<mat-toolbar class="navColor">
+  
+    <a
+        [routerLink]="'/'"
+        mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <!-- <img src="../../../assets/logo2.jpg"> -->
+        <span style="color: rgb(18, 139, 83);">CROP </span>
+        <span style="color: rgb(231, 132, 74);">DEAL</span>
+        
+    </a>
+    <span class="example-spacer "></span>
+    <a style="padding-right: 80px;" *ngIf="!loggedIn" mat-icon-button routerLink="/login">Login</a>
+   <a *ngIf="!loggedIn" mat-icon-button routerLink="/register">Register </a>
+  
+    <a mat-icon-button *ngIf="loggedIn">User</a>
+    <a mat-icon-button (click)="logoutUser()" *ngIf="loggedIn">Logout</a>
+    <!-- <span class="example-spacer"></span> -->
+                <!--Login-->
+  <!-- <nav *ngIf="login.getUserRole()=='user'">  -->
+    <!-- <nav>
+    <a
+       *ngIf="!isLoggedIn"
+         [routerLink]="'signin'"
+         mat-icon-button class="example-icon favorite-icon " aria-label="Example icon-button with heart icon">
+       <p> Sign in</p>
+    </a> -->
+  
+            <!--register-->
+    <!-- <a
+        *ngIf="!isLoggedIn"
+          [routerLink]="'signup'"
+         mat-icon-button 
+         class="example-icon favorite-icon  "
+          aria-label="Example icon-button with heart icon">
+         Register
+    </a>
+  
+    <a
+      *ngIf="isLoggedIn"
+        [routerLink]="'/user'"
+       mat-icon-button 
+       style="margin-right:35px"
+       class="example-icon favorite-icon  "
+        aria-label="Example icon-button with heart icon">
+       {{user.username}}
+    </a> -->
+  
+            <!--logout-->
+    <!-- <a
+      (click)="logout()"
+        *ngIf="isLoggedIn"
+          [routerLink]="'/signup'"
+         mat-icon-button 
+         class="example-icon favorite-icon  "
+          aria-label="Example icon-button with heart icon">
+         Logout
+    </a>
+  </nav> -->
+  </mat-toolbar>
